@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DD/DDCA/labs/lab6/sources_1/imports/new/ArithmeticUnit32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ArithmeticUnit32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DD/DDCA/labs/lab6/sources_1/imports/new/LogicUnit32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogicUnit32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DD/DDCA/labs/lab6/sources_1/imports/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DD/DDCA/DDCA_lab_sp25/lab6/lab6.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,8 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/DD/DDCA/DDCA_lab_sp25/lab6/lab6.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/DD/DDCA/labs/lab6/sources_1/imports/new/ALU.v,1754656396,verilog,,,,ALU,,,,,,,,
+D:/DD/DDCA/labs/lab6/sources_1/imports/new/ArithmeticUnit32.v,1754658613,verilog,,D:/DD/DDCA/labs/lab6/sources_1/imports/new/LogicUnit32.v,,ArithmeticUnit32,,,,,,,,
+D:/DD/DDCA/labs/lab6/sources_1/imports/new/LogicUnit32.v,1754641728,verilog,,D:/DD/DDCA/labs/lab6/sources_1/imports/new/ALU.v,,LogicUnit32,,,,,,,,
