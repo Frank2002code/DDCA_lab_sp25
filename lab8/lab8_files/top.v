@@ -19,12 +19,13 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module top(
-        input             FPGACLK,
-        // TODO PART II for Lab 8
-        // add input port to read the switch value for speed control of the snake
+      input             FPGACLK,
+      // TODO PART II for Lab 8
+      // add input port to read the switch value for speed control of the snake
+      input      [1:0]  SWITCH,
 		  input             RESET,
 		  output     [6:0]  LED,
-	     output reg [3:0]  AN
+	    output reg [3:0]  AN
     );
 
 // Define internal signals
@@ -83,8 +84,11 @@ clockdiv ClockDiv (
    // The speed of the snake must be read as input and sent to the MIPS processor.
    // Create the 32 bit IOReadData based on IOAddr value. Remember IOAddr is a 4-bit
    // value.
+   // 根據 Lab 8-2 手冊，速度控制開關的位址是 0x...7FF4，對應 IOAddr = 4'h4 
+   // 當 MIPS 讀取這個位址時，將 2-bit 的 SWITCH 值傳給 IOReadData 的 LSBs
+   // 其他位址讀取時，回傳0
     
-   // assign IOReadData = ;
+   assign IOReadData = (IOAddr == 4'h4) ? {30'b0, SWITCH} : 32'h0;
 
 
 // Register to save the 28-bit Value
@@ -103,7 +107,6 @@ MIPS processor (
     .IOWriteEn(IOWriteEn), 
     .IOReadData(IOReadData)
     );
-
 
 
 endmodule
